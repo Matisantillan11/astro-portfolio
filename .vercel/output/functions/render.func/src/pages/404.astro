@@ -1,0 +1,18 @@
+---
+import Layout from "../components/layout.astro";
+---
+
+<Layout title="404 | Error" description="404"> 
+  <div slot="main" class="h-screen flex justify-center items-center flex-col text-pretty text-center">
+    <h1 class="text-lg font-semibold">Page not found</h1>
+    <p class="text-9xl font-semibold">404</p>
+    <p class="text-md font-semibold text-red-400/90">Ooooops, something went wrong!</p>
+    <p class="text-md font-semibold text-white/70 my-2">The page you are looking for might have been <br/> removed, have it's name changed or <br/> is temporarily unavailable</p>
+
+    <a href="/" >
+      <button type="submit" class="mt-4 px-12 text-sm py-2 bg-violet-700 rounded-xl hover:bg-violet-600">
+        Go back
+      </button>
+    </a>
+  </div>
+</Layout>
