@@ -4,7 +4,6 @@ import { supabase } from '../../../lib/supabase'
 export const POST: APIRoute = async ({ request, redirect }) => {
 	const formData = await request.formData()
 	const email = formData.get('email')?.toString()
-	console.log(email)
 	if (!email) {
 		return new Response('Email is required', { status: 400 })
 	}
