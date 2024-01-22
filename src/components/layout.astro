@@ -1,44 +1,54 @@
 ---
+import Header from './header.astro'
+import Footer from './footer.astro'
+import '@fontsource/geist-mono'
 
 interface Props {
-  title: string;
-  description: string;
+	title: string
+	description: string
 }
 
 const { title, description } = Astro.props
 const { currentLocale } = Astro
-
 ---
 
 <html lang={currentLocale}>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-    <meta name="description" content={description} />
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/png' href='/favicon.png' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='description' content={description} />
 		<title>{title}</title>
-    <style is:global>
-     main {
-      width: 100vw;
-      height: 100vh;    
-      background: linear-gradient(45deg, #120431, #0A031C);
-     }
+		<style is:global>
+			body {
+				width: 100vw;
+				height: 100%;
+				background: linear-gradient(45deg, #120431, #0a031c);
+				font-family: 'Geist Mono', sans-serif;
+			}
 
-     h1,h2 ,h3 ,h4 ,h5 ,h6 ,p ,a ,label, button {
-      font-family: 'Inter', sans-serif;
-      color: #fff;
-     }
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			a,
+			label,
+			button {
+				color: #fff;
+			}
 
-     #glass{
-      filter: blur(20px);
-      z-index: 5;
-     }
-
-    </style>
+			#glass {
+				filter: blur(20px);
+				z-index: 5;
+			}
+		</style>
 	</head>
 	<body>
-    <main>
-      <slot name="main"></slot>
-		</main>
+		<Header />
+		<slot name='main' />
+		<Footer />
 	</body>
 </html>
