@@ -1,19 +1,19 @@
-# Portfolio
+# Portfolio 👨🏼‍💻
 
 Welcome to my portfolio! This site has been developed using [Astro](https://astro.build/) with React, and is designed to showcase my experience, projects and skills in the world of web development.
 
-## Content
+## Content 📋
 
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [How to Run Locally](#how-to-run-locally)
 - [Project Structure](#project-structure)
 
-## Demo
+## Demo 🔌
 
 You can access a live demo of the portfolio [here](https://matisantillan.dev).
 
-## Technologies Used
+## Technologies Used 🚀
 
 - [Astro](https://astro.build/): Static website building framework with React.
 - [React](https://reactjs.org/): Library for building user interfaces.
@@ -44,7 +44,7 @@ You can access a live demo of the portfolio [here](https://matisantillan.dev).
 
    The project will run on `http://localhost:4321`.
 
-## Project Structure
+## Project Structure 🛕
 
 ```
 portfolio/
