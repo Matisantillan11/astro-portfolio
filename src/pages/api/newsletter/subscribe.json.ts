@@ -25,6 +25,11 @@ export const POST: APIRoute = async ({ request, redirect }) => {
 		JSON.stringify({
 			message: data,
 		}),
-		{ status: 200 },
+		{
+			status: 200,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		},
 	)
 }
