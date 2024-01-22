@@ -8,6 +8,6 @@ const API_BASE = ENV[import.meta.env.NODE_ENV]
 export const API_ROUTE = {
 	NEWSLETTER: {
 		BASE: `${API_BASE}/newsletter`,
-		SUBSCRIBE: `${API_BASE}/newsletter/subscribe.json`,
+		SUBSCRIBE: `${API_BASE}/newsletter/subscribe`,
 	},
 }
